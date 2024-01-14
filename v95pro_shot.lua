@@ -2,16 +2,16 @@ EnablePrimaryMouseButtonEvents(true)
 isRightButtonDown = false
 
 local function click_random_left_mouse()
-    OutputLogMessage("模拟鼠标左键点击开始\n")
+    --OutputLogMessage("模拟鼠标左键点击开始\n")
     PressMouseButton(1)
     local sleepTimePress = math.random(40, 50)
-    OutputLogMessage("按下延时: "..sleepTimePress.."ms\n")
+    --OutputLogMessage("按下延时: "..sleepTimePress.."ms\n")
     Sleep(sleepTimePress)
     ReleaseMouseButton(1)
     local sleepTimeRelease = math.random(40, 60)
-    OutputLogMessage("释放延时: "..sleepTimeRelease.."ms\n")
+    --OutputLogMessage("释放延时: "..sleepTimeRelease.."ms\n")
     Sleep(sleepTimeRelease)
-    OutputLogMessage("模拟鼠标左键点击结束\n")
+    --OutputLogMessage("模拟鼠标左键点击结束\n")
 end
 
 function OnEvent(event, arg)
